@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodersGym - Mobile LeetCode Practice Platform</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            scroll-behavior: smooth;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #FFA116 0%, #FFB84C 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="fixed w-full bg-black bg-opacity-90 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold gradient-text">CodersGym</h1>
+            <div class="space-x-6">
+                <a href="#features" class="text-gray-300 hover:text-yellow-500">Features</a>
+                <a href="#download" class="bg-[#FFA116] text-white px-4 py-2 rounded-lg hover:bg-[#FFB84C]">Download Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-20 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-bold mb-6">LeetCode Practice<br><span class="gradient-text">In Your Pocket</span></h2>
+            <p class="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">Your complete mobile companion for LeetCode practice. Code, compete, and learn on the go.</p>
+            <img src="/api/placeholder/800/500" alt="CodersGym App Preview" class="rounded-xl shadow-2xl mx-auto"/>
+        </div>
+    </header>
+
+    <section id="features" class="py-20 px-6">
+        <div class="container mx-auto grid md:grid-cols-3 gap-8">
+            <div class="feature-card p-6 rounded-xl">
+                <h3 class="text-2xl font-bold mb-4 gradient-text">Daily Challenges</h3>
+                <p class="text-gray-400">Stay consistent with instant access to daily coding challenges, right at your fingertips.</p>
+            </div>
+            <div class="feature-card p-6 rounded-xl">
+                <h3 class="text-2xl font-bold mb-4 gradient-text">Contest Tracker</h3>
+                <p class="text-gray-400">Never miss a competition with our upcoming LeetCode contests calendar and reminders.</p>
+            </div>
+            <div class="feature-card p-6 rounded-xl">
+                <h3 class="text-2xl font-bold mb-4 gradient-text">Complete Problem Set</h3>
+                <p class="text-gray-400">Access and solve from the entire collection of LeetCode problems anytime, anywhere.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 bg-black bg-opacity-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Powerful Features for Mobile Practice</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">Built-In Code Editor</h3>
+                        <p class="text-gray-300">Write, test, and submit your solutions directly within the app. Our mobile-optimized editor makes coding on the go a breeze.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">Dynamic Profile Stats</h3>
+                        <p class="text-gray-300">Track your progress with interactive and visually engaging animations. Watch your skills grow with detailed statistics.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">Easy Authentication</h3>
+                        <p class="text-gray-300">Log in effortlessly using your LeetCode credentials or simply with your username. Quick and secure access to your account.</p>
+                    </div>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">Community Insights</h3>
+                        <p class="text-gray-300">Explore community discussions and expert solutions for each problem. Learn from others and improve your problem-solving skills.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">Contest Preparation</h3>
+                        <p class="text-gray-300">Stay ready for competitions with our contest calendar, problem archives, and practice tools.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 gradient-text">Progress Tracking</h3>
+                        <p class="text-gray-300">Monitor your solving patterns, success rates, and improvement over time with detailed analytics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Why Choose CodersGym?</h2>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold gradient-text mb-2">24/7</h3>
+                    <p class="text-gray-400">Access Anywhere</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold gradient-text mb-2">2000+</h3>
+                    <p class="text-gray-400">Practice Problems</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold gradient-text mb-2">Live</h3>
+                    <p class="text-gray-400">Contest Updates</p>
+                </div>
+                <div class="p-4">
+                    <h3 class="text-4xl font-bold gradient-text mb-2">Active</h3>
+                    <p class="text-gray-400">Community</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="download" class="py-20 px-6 bg-black bg-opacity-50">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6 text-white">Ready to Level Up Your Coding Game?</h2>
+        <p class="text-xl text-gray-400 mb-12">
+            Download CodersGym now and start practicing LeetCode problems on your mobile device.
+        </p>
+        <a href="https://play.google.com/store/apps/details?id=com.gouravsh.codersgym" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-[#3bcc4c] text-white px-6 py-3 rounded-lg shadow-lg hover:bg-[#34a853]">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/512px-Google_Play_Store_badge_EN.svg.png" alt="Get it on Google Play" class="h-10 w-auto" />
+        </a>
+    </div>
+</section>
+
+    <footer class="bg-black bg-opacity-90 py-12 px-6">
+        <div class="container mx-auto text-center text-gray-400">
+            <p>&copy; 2025 CodersGym. All rights reserved.</p>
+            <p class="mt-2">Not affiliated with LeetCode. This is a third-party app for practicing LeetCode problems.</p>
+        </div>
+    </footer>
+</body>
+</html>
